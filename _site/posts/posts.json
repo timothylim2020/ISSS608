@@ -1,0 +1,19 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Project",
+    "description": "Welcome to our new blog, Project. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-04-11",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-04-11T22:16:20+08:00",
+    "input_file": {}
+  }
+]
