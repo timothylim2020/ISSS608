@@ -52,7 +52,8 @@ A list of packages are required for this protyping report. This code chunk insta
 
 ```{r}
 # Load packages
-packages = c('readr', 'dplyr', 'tidyverse', 'plyr', 'ggstatsplot', 'ggplot2', 'ggpubr', 'corrplot', 'plotly', 'ggcorrplot', 'rstantools', 'fastDummies')
+packages = c('readr', 'dplyr', 'tidyverse', 'plyr', 'ggstatsplot', 'ggplot2', 'ggpubr', 'corrplot', 
+             'plotly', 'ggcorrplot', 'rstantools', 'fastDummies')
 for(p in packages){
   if(!require(p,character.only = T)){
     install.packages(p)
@@ -68,11 +69,11 @@ The data set used in this report is from [Kaggle](https://www.kaggle.com/uciml/s
 
 Below shows the metadata for the data set:
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width = "500px"}
 knitr::include_graphics("meta1.png")
 ```
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width = "500px"}
 knitr::include_graphics("meta2.png")
 ```
 
@@ -386,3 +387,10 @@ interactive_cor
 ## 5. Conclusion
 
 With interactivity implemented in the visualization, users can intentionally select the combinations of inputs that he or she wants to review further, and it helps clarity especially in data sets that have many variables. This will impact not just the total number of charts showing at one go, but the information that appears to the user. For example, the correlation plots. Should every box contain numerical data on correlation, it might be overwhelming for the user, compared to allowing the user to mouse over the data points to review. Adding statistical inputs for the charts also allows the user to make quick conclusions not based on a wild guess but based on mathematical calculations which allows the user to quickly analyze the data. 
+
+The final storyboard is proposed to look like this, with selection tabs for the user to select which analysis he or she wants from the top, and will be able to select the more specific analysis for reviewing. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("storyboard.jpg")
+```
+
